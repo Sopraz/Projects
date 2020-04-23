@@ -8,7 +8,7 @@ from matplotlib import style
 import datetime as dt
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
-os.chdir('/Users/mamane/Desktop/Cotations des actions')
+os.chdir('/Users/mamane/Desktop/Cotations des actions') """ 'Cotations des actions' is the folder where all the files that can be generated for this program are put' """
 from datapackage import Package
 import openpyxl
 
@@ -94,6 +94,10 @@ class Draw_curve(Stock_prices):
         plt.savefig(fname ='cotations of '+self.nom+'.png' )
 
 
+# if __name__ == "__main__":
+#     Teleperformance = Draw_curve("TEP.PA", dt.datetime(2000,1,1),dt.datetime(2019,12,31))
+#     Teleperformance.save_stockprices_to_excel()
+#     Teleperformance.simple_line()
 
 
 class Economics_indices:
