@@ -1,4 +1,4 @@
-""" Finance """
+""" Finance.py """
 import bs4,os
 import pandas as pd
 import numpy as np
@@ -14,11 +14,20 @@ import openpyxl
 
 
 
-"""This program is my first project, created after 1 month and a half the first day of my python journey. It aims to facilitate getting the asset prices of some stocks which come from the CAC40, the Dow Jones, or even the Nasdaq ."""
-"""You need Internet for this program to be able to get the stock prices"""
+"""
+WHY and AIM : 
+This program  aims to facilitate getting the asset prices of some stocks which come from the CAC40, the Dow Jones, or even the Nasdaq .
+I just constated that the stock prices of the 90's were in the database of many website (Yahoo finance, Boursorama, etc...) but were not 
+accessible to everyone. Hence this program, which allows you to draw, save in a file, or guess the biggest variation,
+of the stock prices contained in any interval of time [t0 : t1].
+
+INDULGENCE :
+This is my first program.
+"""
 
 
-class Stock_prices:
+
+class Stock_prices(object):
     name_of_assets = {'AI.PA':'Air liquide','AAPL':'Apple.Inc','AF.PA':'Air France','TEP.PA':'Teleperformance','RXL.PA':'Rexel','MSFT':'Microsoft','AMZN':'Amazon','SU.PA':'Shneider Electric','MDM.PA':'Maison du Monde','^FCHI':'CAC 40','^DJI':'Dow Jones industrial Average','KEY.PA':'KEYRUS','CAPLI.PA':'Groupe Capelli'}
 
     def __init__(self,name_of_the_asset,debut,fin): #Indiquer le nom de l'action plus la date voulues du debut des cotations a la fin
