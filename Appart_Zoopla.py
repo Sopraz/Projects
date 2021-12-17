@@ -10,7 +10,7 @@ import pandas as pd
 """
 WHY :
 Being a future 2nd year Student, I was looking for an apartment to rent at the beginning of September. 
-But I rapidly understood how anoying the task was (go on the website evryhour), so I thought about making a program that could go on the 
+But I rapidly understood how anoying the task was (go on the website everyhour), so I thought about making a program that could go on the 
 website directly for me and send me an email when a new appartment has been added.
 
 AIM :
