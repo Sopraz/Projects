@@ -8,7 +8,7 @@ from matplotlib import style
 import datetime as dt
 from pandas.plotting import register_matplotlib_converters
 register_matplotlib_converters()
-os.chdir('/Users/mamane/Desktop/Cotations des actions') """ 'Cotations des actions' is the folder where all the files that can be generated for this program are put' """
+os.chdir('Directory_for_graphs')
 from datapackage import Package
 import openpyxl
 
